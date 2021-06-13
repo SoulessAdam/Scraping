@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Projects\\APIs Homemade\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "X:\\Projects\\APIs Homemade\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "X:\\Projects\\APIs Homemade\\ConsoleApp1\\Stock.csproj",
+      "projectName": "Stock",
+      "projectPath": "X:\\Projects\\APIs Homemade\\ConsoleApp1\\Stock.csproj",
       "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
       "outputPath": "X:\\Projects\\APIs Homemade\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
