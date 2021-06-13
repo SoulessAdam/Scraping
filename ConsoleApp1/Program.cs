@@ -1,19 +1,16 @@
-using System;
+﻿using System;
 using System.Net;
 
-
-namespace Stock
+namespace ConsoleApp1
 {
     class Program
     {
-        public string Symbol = "LLOY.L";
-        //public string Market = "LSE";
-
-        static Task Main()
+        static void Main(string[] args)
         {
+            string Symbol = "LLOY.L";
             WebRequest webRequest1 = WebRequest.Create($"https://finance.yahoo.com/quote/{Symbol}");
             WebResponse response = webRequest1.GetResponse();
-            Console.Write(response);
+            Console.WriteLine(response);
         }
     }
 }
