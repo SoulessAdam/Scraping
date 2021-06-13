@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ICI6YzWIOwkOtorXfnlAyC+1CV3SZXt4MNP0O1iBIk9SmPN9RvgsjqSMKjfo9sjnU57F6K0/5wnkyTSfv00TfA==",
+  "success": true,
+  "projectFilePath": "X:\\Projects\\APIs Homemade\\ConsoleApp1\\Stock.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adam\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512"
+  ],
+  "logs": []
+}
