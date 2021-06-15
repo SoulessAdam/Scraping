@@ -22,24 +22,7 @@ namespace StockInfo
             };
         static async Task Main(string[] args)
         {
-            while (true)
-            {
-                Console.Write("Enter Key (S) for Ticker Lookup");
-                Console.Write(" or (I) for Ticker Info: ");
-                var key = Console.ReadKey().Key;
-                Console.WriteLine();
-                switch (key)
-                {
-                    case ConsoleKey.S:
-                        Console.Write("Enter Ticker Name: ");
-                        await LookupSymbols(Console.ReadLine());
-                        break;
-                    case ConsoleKey.I:
-                        Console.Write("Enter Symbol: ");
-                        await getInfo(Console.ReadLine());
-                        break;
-                }
-            }
+            // USE THIS AS A LIB FOR SHIT!!
         }
 
         static async Task getInfo(string Symbol)
