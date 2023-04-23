@@ -57,35 +57,34 @@ namespace StockInfo
             var SymbolAmount = htmlDocument.DocumentNode.SelectSingleNode("/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[1]/div/div/section/section/div/section/ul/li[1]/a/span").InnerText.Split('(')[1].Replace("(", "").Replace(")", "");
             Console.WriteLine();
             Console.WriteLine(SymbolAmount + " Tickers Found");
+            bool notFound = false;
             switch (int.Parse(SymbolAmount))
             {
                 case 0:
                     Console.WriteLine("No Symbols Found. Make sure your spelling is correct!");
+                    notFound = true;
                     break;
                 case 1:
                     AddOne();
-                    await PrintList(1);
                     break;
                 case 2:
                     AddTwo();
-                    await PrintList(2);
                     break;
                 case 3:
                     AddThree();
-                    await PrintList(3);
                     break;
                 case 4:
                     AddFour();
-                    await PrintList(4);
                     break;
                 case 5:
                     AddFive();
-                    await PrintList(5);
                     break;
                 default:
                     AddFive();
-                    await PrintList(5);
                     break;
+            }
+            if(!notFound){
+                await PrintList((int.Parse(SymbolAmount) > 5) ? 5 : int.Parse(SymbolAmount));
             }
 
             void AddOne()
